@@ -3,7 +3,7 @@
 # docker build .
 
 # Based on CUDA10.0 & CuDNN7
-FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
+FROM noelmni/cuda:10.0-cudnn7-devel-ubuntu18.04
 
 # Set apt-get to automatically retry if a package download fails
 RUN echo 'Acquire::Retries "5";' > /etc/apt/apt.conf.d/99AcquireRetries
